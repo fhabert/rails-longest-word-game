@@ -1,0 +1,30 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    letter-spacing: 1px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #314D9B;
+    color: white;
+    height: 80px;
+    width: 80px;
+}
+.cards {
+    display: flex;
+}
+
+.letter-card {
+    font-weight: 600;
+    font-size: 32px;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Result</h1>
+    <p>These were the letters: </p>
+    <% @letters.each do |letter|  %>
+        <%= letter.upcase  %>
+    <% end %>
+
+    <% if @canBuild && @englishWord %>
+        <p>Congratulations!</p>
+        <p>Your score <%= @score %></p>
+    <% elsif @canBuild %>
+        <p>Sorry this isn't an english word..</p>
+    <% else %>
+        <p>Sorry but it can't be built from those letters..</p>
+        <p><%= session['score'] %></p>
+    <% end %>
+    <%= link_to "Play again", new_path %>
+</div>
