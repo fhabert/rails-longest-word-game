@@ -12,7 +12,7 @@
         <p>Sorry this isn't an english word..</p>
     <% else %>
         <p>Sorry but it can't be built from those letters..</p>
-        <p><%= session['score'] %></p>
+        <p><%= session[:score] %></p>
     <% end %>
     <%= link_to "Play again", new_path %>
 </div>
